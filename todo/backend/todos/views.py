@@ -6,6 +6,6 @@ class ListTodo(generics.ListCreateAPIView):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
 
-class DetailTodo(generics.RetrieveUpdateDestroyAPIView):
+class DetailTodo(generics.RetrieveAPIView):
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer

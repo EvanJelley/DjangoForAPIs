@@ -35,6 +35,11 @@ function App() {
       </header>
       <div>
         <h1>Todo List</h1>
+        <form action="http://localhost:8000/api/" method="post">
+          <input type="text" name="title" placeholder="Title" />
+          <input type="text" name="body" placeholder="Body" />
+          <button type="submit">Add</button>
+        </form>
         <ul>
           {list.map(item => (
             <li key={item.id}>
